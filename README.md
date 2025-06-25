@@ -57,5 +57,18 @@ AVG([Satisfaction Score])
 AVG([Monthly Spend])
 
 -- Churn Rate (if created)
-SUM(IF [Churned] = 'Yes' THEN 1 ELSE 0 END) / COUNT([Customer ID])
+SUM(IF [Churned] = 'Yes' THEN 1 ELSE 0 END) / COUNT([Customer ID])`
+
+##  Challenges Faced
+During the development of this Tableau dashboard, several challenges were encountered:
+
+Data Cleaning & Formatting: The original dataset contained inconsistent values and missing entries, which required preprocessing outside Tableau before loading.
+
+Granularity Issues: Aggregating satisfaction scores and spending metrics while preserving individual-level insights required careful design of visualizations and filters.
+
+Balancing Detail and Clarity: Achieving the right balance between detail and simplicity in the dashboards was essential to maintain readability for stakeholders.
+
+Dynamic Filtering: Implementing filters that interacted across multiple sheets sometimes led to performance issues and required optimization.
+
+Churn Logic Validation: Ensuring the accuracy of churn identification logic (e.g., interpreting "Churned" status) needed validation against the original business rules.
 
