@@ -78,37 +78,19 @@ AVG([Monthly Spend])
 
 SUM(IF [Churned] = 'Yes' THEN 1 ELSE 0 END) / COUNT([Customer ID])
 
-🚧 Challenges Faced
+🧩 Challenges Faced
 
-Issue
+During the development of this Tableau dashboard, several challenges were encountered:
 
-Description
+Data Cleaning & Formatting: The original dataset contained inconsistent values and missing entries, which required preprocessing outside Tableau before loading.
 
-Resolution
+Granularity Issues: Aggregating satisfaction scores and spending metrics while preserving individual-level insights required careful design of visualizations and filters.
 
-Title wrapping
+Balancing Detail and Clarity: Achieving the right balance between detail and simplicity in the dashboards was essential to maintain readability for stakeholders.
 
-Titles like "Gender Review" wrapped unintentionally
+Dynamic Filtering: Implementing filters that interacted across multiple sheets sometimes led to performance issues and required optimization.
 
-Adjusted text box/container width
-
-Blank visuals
-
-Sheet appeared blank on dashboard
-
-Re-dragged correct sheet and resized
-
-Overlapping bars/labels
-
-Some visuals were cluttered
-
-Increased spacing and adjusted layout
-
-Color issues
-
-Automatic color assignment was unclear
-
-Manually set consistent palette
+Churn Logic Validation: Ensuring the accuracy of churn identification logic (e.g., interpreting "Churned" status) needed validation against the original business rules.
 
 🧠 Key Insights
 
