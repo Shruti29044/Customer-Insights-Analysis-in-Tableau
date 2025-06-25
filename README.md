@@ -104,10 +104,6 @@ Gender distribution nearly equal
 
 🗂️ File Structure
 
-File
-
-Description
-
 Screenshot.png
 
 Final dashboard image
